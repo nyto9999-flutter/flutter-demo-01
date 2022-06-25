@@ -1,13 +1,6 @@
-# demo
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
+- [開發歷程](https://github.com/users/nyto9999/projects/9)
+- [Flutter 101](https://www.youtube.com/watch?v=wE7khGHVkYY)
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
