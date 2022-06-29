@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'text_styles.dart';
 import 'styled_button.dart';
+import 'about.dart';
 
 class Score extends StatelessWidget {
   const Score(
@@ -20,14 +21,16 @@ class Score extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         StyledButton(icon: Icons.refresh, onPressed: onStartOver),
-        Padding(
-          padding: const EdgeInsets.only(left: 32.0, right: 32.0),
-          child: Column(
-            children: <Widget>[
-              Text('Score: ', style: LabelTextStyle.bodyText1(context)),
-              Text('$totalScore',
-                  style: ScoreNumberTextStyle.headline4(context)),
-            ],
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 32.0, right: 32.0),
+            child: Column(
+              children: <Widget>[
+                Text('Score: ', style: LabelTextStyle.bodyText1(context)),
+                Text('$totalScore',
+                    style: ScoreNumberTextStyle.headline4(context)),
+              ],
+            ),
           ),
         ),
         Padding(
@@ -45,7 +48,14 @@ class Score extends StatelessWidget {
             ],
           ),
         ),
-        StyledButton(icon: Icons.info, onPressed: () {})
+        StyledButton(
+            icon: Icons.info,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const AboutPage()),
+              );
+            })
       ],
     );
   }
